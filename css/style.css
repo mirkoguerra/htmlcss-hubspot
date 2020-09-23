@@ -30,6 +30,13 @@
 }
 /* per evidenziare i div nascosti */
 
+.cont{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+/* per dare la centratura generale nelle parti in cui serve */
+
 .grey{
   background-color: #e3e5e8;
 }
@@ -79,12 +86,6 @@ main .section-1{
   height: 800px;
 }
 
-main .section-1 .container{
-  height: 100%;
-  width: 80%;
-  margin: auto;
-}
-
 main .section-1 .row-1, main .section-1 .row-2{
   height: 20%;
 }
@@ -105,7 +106,16 @@ main .section-1 .row-3 .col-middle{
   margin-left: 5%;
 }
 
-.section-2{
+main .section-2{
   height: 400px;
   background-color: #0ccfbb;
+}
+
+main .section-2 .row-1 {
+  height: 30%;
+  margin-bottom: 5px;
+}
+
+main .section-2 .row-2 {
+  height: 60%;
 }
