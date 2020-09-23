@@ -33,7 +33,7 @@
 .cont{
   height: 100%;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 /* per dare la centratura generale nelle parti in cui serve */
 
@@ -118,4 +118,26 @@ main .section-2 .row-1 {
 
 main .section-2 .row-2 {
   height: 60%;
+}
+
+main .section-3{
+  height: 400px;
+}
+
+main .section-3 .row-1{
+  height: 40%;
+}
+
+main .section-3 .row-2{
+  height: 60%;
+}
+
+main .section-3 .col-left{
+  height: 100%;
+  width: 40%;
+}
+
+main .section-3 .col-right{
+  height: 100%;
+  width: 60%;
 }
