@@ -120,24 +120,53 @@ main .section-2 .row-2 {
   height: 60%;
 }
 
-main .section-3{
+main .section-3 {
   height: 400px;
 }
 
-main .section-3 .row-1{
+main .section-3 .row-1 {
   height: 40%;
 }
 
-main .section-3 .row-2{
+main .section-3 .row-2 {
   height: 60%;
 }
 
-main .section-3 .col-left{
+main .section-3 .col-left {
   height: 100%;
   width: 40%;
 }
 
-main .section-3 .col-right{
+main .section-3 .col-right {
   height: 100%;
   width: 60%;
+}
+
+footer {
+  height: 400px;
+  background-color: #252045;
+}
+
+footer .row-1 {
+  height: 60%;
+}
+
+footer .row-1 .col {
+  height: 100%;
+  width: 25%;
+}
+
+footer .row-2, footer .row-3 {
+  height: 20%;
+}
+
+footer .row-3 .col-left, footer .row-3 .col-right {
+  height: 100%;
+  width: 30%;
+}
+
+footer .row-3 .col-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
