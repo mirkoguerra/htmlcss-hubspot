@@ -38,6 +38,14 @@
 }
 /* per dare la centratura generale nelle parti in cui serve */
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* per centrare sia in altezza che in larghezza */
+
 .height-center {
   position: absolute;
   top: 50%;
@@ -136,8 +144,36 @@ main .section-1 .row-1 .img {
   height: 50%;
 }
 
-main img {
+main .section-1 .row-1 img {
   height: 100%;
+}
+
+main .section-1 .row-2 .col-left {
+  height: 100%;
+  width: 35%;
+}
+
+main .section-1 .row-2 .col-right {
+  height: 100%;
+  width: 65%;
+}
+
+main .section-1 .row-2 .col-left .center {
+  height: 70%;
+  width: 40%;
+}
+
+main .section-1 .row-2 .col-left .center img {
+  height: 45%;
+}
+
+main .section-1 .row-2 .col-left .center button {
+  height: 30%;
+  margin-bottom: 5%;
+}
+
+main .section-1 .row-2 .col-right h3{
+  margin-top: 5%;
 }
 
 main .section-1 .row-3{
