@@ -50,6 +50,10 @@
 }
 /* una specie di float right */
 
+.tac{
+  text-align: center;
+}
+
 .grey{
   background-color: #e3e5e8;
 }
@@ -90,8 +94,11 @@ header .row-2 .col-left .height-center img {
 }
 
 header .row-3 {
-  background-color: pink;
   height: 400px;
+  background-image: url("../img/sfondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header .row-3 .col {
@@ -118,6 +125,19 @@ main .section-1{
 
 main .section-1 .row-1, main .section-1 .row-2{
   height: 20%;
+}
+
+main .section-1 .row-1 {
+  width: 70%;
+  margin: auto;
+}
+
+main .section-1 .row-1 .img {
+  height: 50%;
+}
+
+main img {
+  height: 100%;
 }
 
 main .section-1 .row-3{
