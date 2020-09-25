@@ -325,6 +325,23 @@ main .section-3 .col-left {
   width: 40%;
 }
 
+main .section-3 .row-1 .col-left div {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+}
+
+main .section-3 .row-1 .col-left div h3 {
+  font-size: 28px;
+  margin-top: 10%;
+}
+
+main .section-3 .row-1 .col-left div p {
+  font-size: 12px;
+  margin-top: 5%;
+}
+
 main .section-3 .col-right {
   height: 100%;
   width: 60%;
@@ -345,6 +362,15 @@ main .section-3 .row-2 .col-left button {
 
 main .section-3 .row-2 .col-left span {
   font-size: 10px;
+}
+
+main .section-3 .row-2 .col-right .fl-r {
+  height: 100%;
+  width: 50%;
+  background-image: url(../img/io.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
