@@ -284,14 +284,28 @@ main .section-1 .row-3 .rel button{
 main .section-2{
   height: 400px;
   background-color: #0ccfbb;
+  color: white;
 }
 
 main .section-2 .row-1 {
-  height: 40%;
+  height: 30%;
+}
+
+main .section-2 .row-1 h3 {
+  font-size: 24px;
+}
+
+main .section-2 .row-1 div {
+  width: 80%;
+  margin: 2% auto;
+}
+
+main .section-2 .row-1 p {
+  font-size: 12px;
 }
 
 main .section-2 .row-2 {
-  height: 60%;
+  height: 70%;
 }
 
 main .section-3 {
@@ -314,6 +328,23 @@ main .section-3 .col-left {
 main .section-3 .col-right {
   height: 100%;
   width: 60%;
+}
+
+main .section-3 .row-2 .col-left p {
+  margin-top: 5%;
+}
+
+main .section-3 .row-2 .col-left button {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 15%;
+  background-color: orange;
+  color: white;
+  display: block;
+}
+
+main .section-3 .row-2 .col-left span {
+  font-size: 10px;
 }
 
 footer {
