@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* avrei dovuto definire delle regole generali di font-size ecc. per mantenere omogeneità nella pagina, ma avendo utilizzato alcune sezioni come "banco di prova", definisco internamente alle sezioni che ho curato maggiormente, avendo capito come applicare, solo in un secondo momento, le regole più generali  */
+
 .collapse:after {
   content: "";
   display: table;
@@ -172,8 +174,8 @@ main .section-1 .row-2 .col-left .center button {
   margin-bottom: 5%;
 }
 
-main .section-1 .row-2 .col-right h3{
-  margin-top: 5%;
+main .section-1 .row-2 .col-right h3, main .section-1 .row-2 .col-right p, main .section-1 .row-2 .col-right h5, main .section-1 .row-2 .col-right div{
+  margin-top: 2%;
 }
 
 main .section-1 .row-3{
@@ -190,6 +192,54 @@ main .section-1 .row-3 .col{
 main .section-1 .row-3 .col-middle{
   margin-right: 5%;
   margin-left: 5%;
+}
+
+main .section-1 .row-3 .col .img {
+  height: 15%;
+  margin-top: 3%;
+}
+
+main .section-1 .row-3 .col img {
+  height: 100%;
+}
+
+main .section-1 .row-3 h3{
+  margin-top: 5%;
+}
+
+main .section-1 .row-3 p {
+font-size: 12px;
+  padding: 5%;
+}
+
+main .section-1 .row-3 .hr{
+  height: 10%;
+  width: 80%;
+  margin: 5% auto;
+  border-bottom: 2px solid grey;
+}
+
+main .section-1 .row-3 h4 {
+  font-size: 14px;
+  margin-top: 10%;
+}
+
+main .section-1 .row-3 .cont-80 {
+  width: 80%;
+  margin: auto;
+}
+
+main .section-1 .row-3 .cont-80 span {
+  font-size: 12px;
+}
+
+main .section-1 .row-3 .rel {
+  height: 20%
+}
+
+main .section-1 .row-3 .rel button{
+  background-color: orange;
+  padding: 5px;
 }
 
 main .section-2{
@@ -230,15 +280,44 @@ main .section-3 .col-right {
 footer {
   height: 400px;
   background-color: #252045;
+  color: white;
 }
 
 footer .row-1 {
   height: 60%;
+  font-size: 12px;
 }
 
 footer .row-1 .col {
   height: 100%;
   width: 25%;
+}
+
+footer .row-1 .col div {
+  position: absolute;
+  top: 5%;
+}
+
+footer .row-1 .col ul {
+  list-style-type: none;
+}
+
+footer .row-1 .col ul li {
+  margin-top: 5%;
+}
+
+footer .row-1 .col li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .row-1 .col button {
+  margin: 5% 0;
+  font-size: 12px;
+}
+
+footer .row-1 .col i {
+  margin-right: 10%;
 }
 
 footer .row-2, footer .row-3 {
