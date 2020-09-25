@@ -309,6 +309,21 @@ main .section-2 .row-2 {
   height: 70%;
 }
 
+main .section-2 .row-2 table {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* con 8 div mi venivano bene le linee della griglia della tabella, ma volevo provare a usare il tag tab che non uso mai. Ma le linee non mi convincenvano, quindi le ho tolte. Ma almeno ho provato il tag. */
+
+main .section-2 .row-2 i {
+  display: block;
+}
+
+main .section-2 .row-2 p {
+  font-size: 11px;
+}
+
 main .section-3 {
   height: 400px;
 }
