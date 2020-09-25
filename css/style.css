@@ -298,7 +298,7 @@ footer .row-1 .col div {
   top: 5%;
 }
 
-footer .row-1 .col ul {
+footer ul {
   list-style-type: none;
 }
 
@@ -306,7 +306,7 @@ footer .row-1 .col ul li {
   margin-top: 5%;
 }
 
-footer .row-1 .col li a {
+footer li a {
   text-decoration: none;
   color: white;
 }
@@ -324,13 +324,58 @@ footer .row-2, footer .row-3 {
   height: 20%;
 }
 
+footer .row-2 {
+  border-bottom: 1px solid white;
+}
+
+footer .row-2 div {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* per metterlo centrato ma in basso */
+
+footer .row-2 div li {
+  font-size: 12px;
+  display: inline;
+  margin-right: 5px;
+}
+
 footer .row-3 .col-left, footer .row-3 .col-right {
   height: 100%;
   width: 30%;
+}
+
+footer .row-3 .col-left div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+footer .row-3 .col-left img {
+  height: 60%;
+}
+
+footer .row-3 .col-left span {
+  font-size: 12px;
+  display:block;
 }
 
 footer .row-3 .col-right {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+footer .row-3 .col-right div {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+footer .row-3 .col-right li {
+  font-size: 12px;
+  display: inline;
 }
