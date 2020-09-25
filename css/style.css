@@ -166,11 +166,27 @@ main .section-1 .row-1 {
 }
 
 main .section-1 .row-1 .img {
-  height: 50%;
+  height: 40%;
 }
 
 main .section-1 .row-1 img {
-  height: 100%;
+  height: 80%;
+  margin-top: 1%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+main .section-1 .row-1 .tac {
+  height: 55%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+main .section-1 .row-1 .tac h5, main .section-1 .row-1 .tac p {
+  font-size: 11px;
+  margin-top: 1%;
 }
 
 main .section-1 .row-2 .col-left {
