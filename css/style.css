@@ -279,6 +279,7 @@ main .section-1 .row-3 .rel {
 main .section-1 .row-3 .rel button{
   background-color: orange;
   padding: 5px;
+  color: white;
 }
 
 main .section-2{
@@ -345,6 +346,22 @@ main .section-3 .row-1 .col-left div p {
 main .section-3 .col-right {
   height: 100%;
   width: 60%;
+}
+
+main .section-3 .row-1 .col-right .center {
+  height: 60%;
+  width: 90%;
+}
+
+main .section-3 .row-1 .col-right .center .fl {
+  height: 50%;
+  width: 25%;
+}
+
+main .section-3 .row-1 .col-right .center .fl img {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
 }
 
 main .section-3 .row-2 .col-left p {
