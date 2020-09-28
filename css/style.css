@@ -54,6 +54,12 @@
   transform: translate(0, -50%);
 }
 
+.width-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .position-right {
   position: absolute;
   right: 0;
@@ -74,6 +80,20 @@
 }
 /* background-color che devo usare spesso */
 
+.int-button {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+/* lo uso per il testo (tag a) dei button (che faccio con un div e il tag a) arancioni, con le scritte bianche... */
+
+.est-button {
+  height: 40px;
+  background-color: orange;
+  border-radius: 13%;
+}
+/* lo uso per "l'esterno" dei button con sfondo arancione ecc... */
+
 header .row-1 {
   height: 100px;
   width: 100%;
@@ -87,6 +107,32 @@ header .row-1 .col-left, header .row-1 .col-right {
 header .row-1 .col-left a{
   text-decoration: none;
   color: black;
+}
+
+header .row-1 .col-right i {
+  color: #0ec2e6;
+}
+
+header .row-1 .col-right .out-login {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: white;
+  border: 1px solid orange;
+}
+
+header .row-1 .col-right .login {
+  text-decoration: none;
+  color: orange;
+}
+
+header .row-1 .col-right .out-out {
+  display: inline-block;
+  background-color: orange;
+}
+
+header .row-1 .col-right .in-in {
+  color: white;
+  text-decoration: none;
 }
 
 header .row-2 {
@@ -108,22 +154,10 @@ header .row-2 .col-left .height-center img {
   height: 100%;
 }
 
-header .row-2 .col-right div, header .row-2 .col-right select {
-  font-size: 11px;
-  font-family: Times;
-}
-
-header .row-2 .col-right div {
-  width: 100%;
-}
-
-header .row-2 .col-right select, header .row-2 .col-right a {
-  margin-left: 2%;
-}
-
 header .row-2 .col-right a {
   text-decoration: none;
   color: black;
+  margin-left: 3px;
 }
 
 header .row-3 {
@@ -141,7 +175,17 @@ header .row-3 .col {
   bottom: 0;
 }
 
-header .row-3 .col p, header .row-3 .col button {
+header .row-3 .col h2 {
+  font-size: 30px;
+}
+
+header .row-3 .col p {
+  margin-top: 5%;
+  font-size: 12px;
+}
+
+header .row-3 .col div {
+  width: 28%;
   margin-top: 5%;
 }
 
@@ -199,7 +243,7 @@ main .section-1 .row-2 .col-right {
   width: 65%;
 }
 
-main .section-1 .row-2 .col-left .center {
+main .section-1 .row-2 .col-left .box {
   height: 70%;
   width: 40%;
 }
@@ -208,9 +252,8 @@ main .section-1 .row-2 .col-left .center img {
   height: 45%;
 }
 
-main .section-1 .row-2 .col-left .center button {
-  height: 30%;
-  margin-bottom: 5%;
+main .section-1 .row-2 .col-left .center .est-button {
+  margin-top: 5%;
 }
 
 main .section-1 .row-2 .col-right h3, main .section-1 .row-2 .col-right p, main .section-1 .row-2 .col-right h5, main .section-1 .row-2 .col-right div{
@@ -272,15 +315,24 @@ main .section-1 .row-3 .cont-80 span {
   font-size: 12px;
 }
 
-main .section-1 .row-3 .rel {
+/* main .section-1 .row-3 .rel {
   height: 20%
+} */
+
+main .section-1 .box {
+  width: 35%;
 }
 
-main .section-1 .row-3 .rel button{
+main .section-1 .est-button {
+  width: 100;
+  margin-top: 8%;
+}
+
+/* main .section-1 .row-3 .rel button{
   background-color: orange;
   padding: 5px;
   color: white;
-}
+} */
 
 main .section-2{
   height: 400px;
@@ -294,6 +346,7 @@ main .section-2 .row-1 {
 
 main .section-2 .row-1 h3 {
   font-size: 24px;
+  padding-top: 20px;
 }
 
 main .section-2 .row-1 div {
@@ -383,13 +436,9 @@ main .section-3 .row-2 .col-left p {
   margin-top: 5%;
 }
 
-main .section-3 .row-2 .col-left button {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 15%;
-  background-color: orange;
-  color: white;
-  display: block;
+main .section-3 .row-2 .col-left .est-button {
+  width: 28%;
+  margin: 10px 0;
 }
 
 main .section-3 .row-2 .col-left span {
@@ -421,7 +470,7 @@ footer .row-1 .col {
   width: 25%;
 }
 
-footer .row-1 .col div {
+footer .row-1 .col .footer-box {
   position: absolute;
   top: 5%;
 }
@@ -430,7 +479,7 @@ footer ul {
   list-style-type: none;
 }
 
-footer .row-1 .col ul li {
+footer .row-1 li {
   margin-top: 5%;
 }
 
@@ -439,13 +488,19 @@ footer li a {
   color: white;
 }
 
-footer .row-1 .col button {
-  margin: 5% 0;
-  font-size: 12px;
-}
-
 footer .row-1 .col i {
   margin-right: 10%;
+}
+
+footer .row-1 .col .footer-button-out {
+  height: 30px;
+  background-color: white;
+  margin: 5% 0;
+}
+
+footer .row-1 .col .footer-button-in {
+  color: #252045;
+  text-decoration: none;
 }
 
 footer .row-2, footer .row-3 {
