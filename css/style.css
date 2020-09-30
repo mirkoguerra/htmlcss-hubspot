@@ -1,564 +1,161 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* avrei dovuto definire delle regole generali di font-size ecc. per mantenere omogeneità nella pagina, ma avendo utilizzato alcune sezioni come "banco di prova", definisco internamente alle sezioni che ho curato maggiormente, avendo capito come applicare, solo in un secondo momento, le regole più generali  */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #32495B;
+}
 
-.collapse:after {
+a {
+  text-decoration: none;
+  color: #32495B;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3em
+}
+
+.border {
+  border: 1px solid black;
+  /* per evidenziare i div nascosti */
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.h-600 {
+  height: 600px;
+}
+
+.h-1200 {
+  height: 1200px;
+}
+
+.grey {
+  background-color: #F4F9FC;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.rose {
+  background-color: #FFF4EF;
+}
+
+.light-green {
+  background-color: #AFEBE4;
+}
+
+.green {
+  background-color: #00A9B8;
+}
+
+.blue {
+  background-color: #32495B;
+}
+
+.cont {
+  width: 80%;
+  margin: 0 auto;
+  /* per dare la centratura generale nelle parti in cui serve */
+}
+
+.cont-l, .cont-r {
+  width: 50%;
+}
+
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
+  /* aggiungo la classe clearfix ai padri che hanno figli che hanno float, così non me li fanno collassare  */
 }
-/* aggiungo la classe collapse ai padri che hanno figli che hanno float, così non me li fanno collassare  */
 
-.fl {
+.fl-l {
   float: left;
+  /* la assegno agli elementi che devono flottare a sinistra */
 }
-/* la assegno agli elementi che devono flottare */
 
 .fl-r {
   float: right;
+  /* la assegno agli elementi che devono flottare a destra */
 }
-/* la assegno agli elementi che devono flottare a destra */
 
 .rel {
   position: relative;
+  /* per assegnare velocemente al padre di un position absolut la proprietà position relative */
 }
-/* per assegnare velocemente al padre di un position absolut la proprietà position relative */
-
-.border {
-  border: 3px solid black;
-}
-/* per evidenziare i div nascosti */
-
-.cont {
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
-}
-/* per dare la centratura generale nelle parti in cui serve */
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* per centrare sia in altezza che in larghezza */
 
 .height-center {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-}
-
-.width-center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  /* per centrare verticalmente un div */
 }
 
 .position-right {
   position: absolute;
   right: 0;
-}
-/* una specie di float right */
+  /* una specie di float right */
 
-.tac{
-  text-align: center;
+
 }
 
-.grey{
-  background-color: #e3e5e8;
-}
-/* background-color che devo usare spesso */
-
-.white{
-  background-color: #fafafa;
-}
-/* background-color che devo usare spesso */
-
-.int-button {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-}
-/* lo uso per il testo (tag a) dei button (che faccio con un div e il tag a) arancioni, con le scritte bianche... */
-
-.est-button {
-  height: 40px;
-  background-color: orange;
-  border-radius: 13%;
-}
-/* lo uso per "l'esterno" dei button con sfondo arancione ecc... */
-
-header .row-1 {
-  height: 100px;
-  width: 100%;
+.common-button {
+  color: #FFFFFF;
+  background-color: #FE7759;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-header .row-1 .col-left, header .row-1 .col-right {
-  width: 50%;
-  height: 100px;
+header .nav-top .cont-l .height-center a:first-child {
+  margin-right: 5px;
 }
 
-header .row-1 .col-left a{
-  text-decoration: none;
-  color: black;
+header .nav-top .cont-r i {
+  color: #00A4BD;
 }
 
-header .row-1 .col-right i {
-  color: #0ec2e6;
+header .nav-top .cont-r a {
+  border-radius: 5px;
+  padding: 10px;
 }
 
-header .row-1 .col-right .out-login {
-  display: inline-block;
-  margin: 0 10px;
-  background-color: white;
-  border: 1px solid orange;
+header .nav-top .cont-r .login {
+  color: #FE7759;
+  background-color: #FFFFFF;
+  border: 1px solid #FE7759;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
-header .row-1 .col-right .login {
-  text-decoration: none;
-  color: orange;
+header .nav-top .cont-r .gethubspotfree {
+  color: #FFFFFF;
+  background-color: #FE7759;
 }
 
-header .row-1 .col-right .out-out {
-  display: inline-block;
-  background-color: orange;
-}
-
-header .row-1 .col-right .in-in {
-  color: white;
-  text-decoration: none;
-}
-
-header .row-2 {
-  height: 100px;
-}
-
-header .row-2 .col-left, header .row-2 .col-right {
-  width: 50%;
-  height: 100px;
-}
-
-header .row-2 .col-left .height-center {
-  height: 60%;
+header .nav-bottom .cont-l img {
   width: 30%;
 }
 
-header .row-2 .col-left .height-center img {
-  width: 100%;
-  height: 100%;
-}
-
-header .row-2 .col-right a {
-  text-decoration: none;
-  color: black;
-  margin-left: 3px;
-}
-
-header .row-3 {
-  height: 400px;
-  background-image: url("../img/sfondo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-header .row-3 .col {
-  width: 50%;
+header .jumbo .cont-l {
   height: 90%;
   position: absolute;
   bottom: 0;
 }
 
-header .row-3 .col h2 {
-  font-size: 30px;
-}
-
-header .row-3 .col p {
-  margin-top: 5%;
-  font-size: 12px;
-}
-
-header .row-3 .col div {
-  width: 28%;
-  margin-top: 5%;
-}
-
-header .row-4{
-  background-color: #07e3cd;
-  height: 100px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-main .section-1{
-  height: 800px;
-}
-
-main .section-1 .row-1, main .section-1 .row-2{
-  height: 20%;
-}
-
-main .section-1 .row-1 {
-  width: 70%;
-  margin: auto;
-}
-
-main .section-1 .row-1 .img {
-  height: 40%;
-}
-
-main .section-1 .row-1 img {
-  height: 80%;
-  margin-top: 1%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-main .section-1 .row-1 .tac {
-  height: 55%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-main .section-1 .row-1 .tac h5, main .section-1 .row-1 .tac p {
-  font-size: 11px;
-  margin-top: 1%;
-}
-
-main .section-1 .row-2 .col-left {
-  height: 100%;
-  width: 35%;
-}
-
-main .section-1 .row-2 .col-right {
-  height: 100%;
-  width: 65%;
-}
-
-main .section-1 .row-2 .col-left .box {
-  height: 70%;
-  width: 40%;
-}
-
-main .section-1 .row-2 .col-left .center img {
-  height: 45%;
-}
-
-main .section-1 .row-2 .col-left .center .est-button {
-  margin-top: 5%;
-}
-
-main .section-1 .row-2 .col-right h3, main .section-1 .row-2 .col-right p, main .section-1 .row-2 .col-right h5, main .section-1 .row-2 .col-right div{
-  margin-top: 2%;
-}
-
-main .section-1 .row-3{
-    height: 50%;
-}
-
-main .section-1 .row-3 .col{
-  height: 100%;
-  width: 30%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-main .section-1 .row-3 .col-middle{
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-main .section-1 .row-3 .col .img {
-  height: 15%;
-  margin-top: 3%;
-}
-
-main .section-1 .row-3 .col img {
-  height: 100%;
-}
-
-main .section-1 .row-3 h3{
-  margin-top: 5%;
-}
-
-main .section-1 .row-3 p {
-font-size: 12px;
-  padding: 5%;
-}
-
-main .section-1 .row-3 .hr{
-  height: 10%;
-  width: 80%;
-  margin: 5% auto;
-  border-bottom: 2px solid grey;
-}
-
-main .section-1 .row-3 h4 {
-  font-size: 14px;
+header .jumbo .cont-l p {
   margin-top: 10%;
-}
-
-main .section-1 .row-3 .cont-80 {
-  width: 80%;
-  margin: auto;
-}
-
-main .section-1 .row-3 .cont-80 span {
-  font-size: 12px;
-}
-
-/* main .section-1 .row-3 .rel {
-  height: 20%
-} */
-
-main .section-1 .box {
-  width: 35%;
-}
-
-main .section-1 .est-button {
-  width: 100;
-  margin-top: 8%;
-}
-
-/* main .section-1 .row-3 .rel button{
-  background-color: orange;
-  padding: 5px;
-  color: white;
-} */
-
-main .section-2{
-  height: 400px;
-  background-color: #0ccfbb;
-  color: white;
-}
-
-main .section-2 .row-1 {
-  height: 30%;
-}
-
-main .section-2 .row-1 h3 {
-  font-size: 24px;
-  padding-top: 20px;
-}
-
-main .section-2 .row-1 div {
-  width: 80%;
-  margin: 2% auto;
-}
-
-main .section-2 .row-1 p {
-  font-size: 12px;
-}
-
-main .section-2 .row-2 {
-  height: 70%;
-}
-
-main .section-2 .row-2 table {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-/* con 8 div mi venivano bene le linee della griglia della tabella, ma volevo provare a usare il tag tab che non uso mai. Ma le linee non mi convincenvano, quindi le ho tolte. Ma almeno ho provato il tag. */
-
-main .section-2 .row-2 i {
-  display: block;
-}
-
-main .section-2 .row-2 p {
-  font-size: 11px;
-}
-
-main .section-3 {
-  height: 400px;
-}
-
-main .section-3 .row-1 {
-  height: 40%;
-}
-
-main .section-3 .row-2 {
-  height: 60%;
-}
-
-main .section-3 .col-left {
-  height: 100%;
-  width: 40%;
-}
-
-main .section-3 .row-1 .col-left div {
-  height: 100%;
-  width: 60%;
-  position: absolute;
-  left: 20%;
-}
-
-main .section-3 .row-1 .col-left div h3 {
-  font-size: 28px;
-  margin-top: 10%;
-}
-
-main .section-3 .row-1 .col-left div p {
-  font-size: 12px;
-  margin-top: 5%;
-}
-
-main .section-3 .col-right {
-  height: 100%;
-  width: 60%;
-}
-
-main .section-3 .row-1 .col-right .center {
-  height: 60%;
-  width: 90%;
-}
-
-main .section-3 .row-1 .col-right .center .fl {
-  height: 50%;
-  width: 25%;
-}
-
-main .section-3 .row-1 .col-right .center .fl img {
-  height: 100%;
-  width: 100%;
-  padding: 5%;
-}
-
-main .section-3 .row-2 .col-left p {
-  margin-top: 5%;
-}
-
-main .section-3 .row-2 .col-left .est-button {
-  width: 28%;
-  margin: 10px 0;
-}
-
-main .section-3 .row-2 .col-left span {
-  font-size: 10px;
-}
-
-main .section-3 .row-2 .col-right .fl-r {
-  height: 100%;
-  width: 50%;
-  background-image: url(../img/io.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-footer {
-  height: 400px;
-  background-color: #252045;
-  color: white;
-}
-
-footer .row-1 {
-  height: 60%;
-  font-size: 12px;
-}
-
-footer .row-1 .col {
-  height: 100%;
-  width: 25%;
-}
-
-footer .row-1 .col .footer-box {
-  position: absolute;
-  top: 5%;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer .row-1 li {
-  margin-top: 5%;
-}
-
-footer li a {
-  text-decoration: none;
-  color: white;
-}
-
-footer .row-1 .col i {
-  margin-right: 10%;
-}
-
-footer .row-1 .col .footer-button-out {
-  height: 30px;
-  background-color: white;
-  margin: 5% 0;
-}
-
-footer .row-1 .col .footer-button-in {
-  color: #252045;
-  text-decoration: none;
-}
-
-footer .row-2, footer .row-3 {
-  height: 20%;
-}
-
-footer .row-2 {
-  border-bottom: 1px solid white;
-}
-
-footer .row-2 div {
-  position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-/* per metterlo centrato ma in basso */
-
-footer .row-2 div li {
-  font-size: 12px;
-  display: inline;
-  margin-right: 5px;
-}
-
-footer .row-3 .col-left, footer .row-3 .col-right {
-  height: 100%;
-  width: 30%;
-}
-
-footer .row-3 .col-left div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-footer .row-3 .col-left img {
-  height: 60%;
-}
-
-footer .row-3 .col-left span {
-  font-size: 12px;
-  display:block;
-}
-
-footer .row-3 .col-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-footer .row-3 .col-right div {
-  position: absolute;
-  top: 10%;
-  right: 0;
-}
-
-footer .row-3 .col-right li {
-  font-size: 12px;
-  display: inline;
+  margin-bottom: 10%;
 }
