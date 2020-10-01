@@ -17,7 +17,11 @@ a {
 }
 
 h1 {
-  font-size: 3em
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 .border {
@@ -117,12 +121,16 @@ h1 {
   right: 0;
   /* una specie di float right */
 
-
 }
 
 .distac {
   position: absolute;
   top: 5%;
+}
+
+.distac-10 {
+  position: absolute;
+  top: 10%;
 }
 
 .common-button {
@@ -171,6 +179,49 @@ header .jumbo .cont-l {
 header .jumbo .cont-l p {
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+main .green {
+  color: #FFFFFF;
+}
+
+main .green .green-top {
+  height: 30%;
+  margin-bottom: 5%;
+}
+
+main .green .green-top .green-top-in {
+  height: 90%;
+  width: 100%;
+  text-align: center;
+}
+
+main .green .green-top .green-top-in h3 {
+  margin-bottom: 10px;
+}
+
+main .green .green-bottom {
+  height: 50%;
+}
+
+main .green .green-bottom .fl-l {
+  height: 50%;
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+}
+
+main .green .green-bottom div:first-child {
+  border-top: none;
+  border-left: none;
+}
+
+main .green .green-bottom div:nth-child(5) {
+  border-left: none;
+}
+
+main .green .green-bottom div:nth-child(2), main .green .green-bottom div:nth-child(3), main .green .green-bottom div:nth-child(4) {
+  border-top: none;
 }
 
 footer {
